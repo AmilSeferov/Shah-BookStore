@@ -1,0 +1,57 @@
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width:960px ;
+    height: 100vh;
+    background-color:black;
+    color: red;
+    div{
+        position: relative;
+        width: 450px;
+    }
+    p{
+        opacity: 0;
+        position: absolute;
+        top: 0;
+    }
+    .a1{
+        animation: slow ease-in 2.2s 2s;
+    }
+    .a2{
+        animation: slow ease-in 2.2s 3.4s;
+    }
+    .a3{
+        animation: slow ease-in 2.2s 4.6s;
+    }
+    .a4{
+        animation: slow ease-in 2.2s 5.8s;
+    }
+    .a5{
+        animation: slow ease-in 2.2s 7s;
+    }
+    .a6{
+        animation: slow ease-in 2.2s 8.2s;
+    }
+    .a7{
+        animation: slow ease-in 2.2s 9.4s;
+    }
+}
+@keyframes slow{
+    0%{
+        opacity: 0;
+        transform:translate(0px ,80px);
+    }
+    100%{
+        opacity: 1;
+        transform:translate(0 ,0);
+    }
+}
+audio{
+    position: fixed;
+    bottom: 10px;
+    z-index: 6;
+    width: 300px;
+    height: 50px;
+}
